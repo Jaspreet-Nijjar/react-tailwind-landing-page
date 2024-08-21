@@ -1,4 +1,5 @@
 import logo from '../../images/logo.svg';
+import Button from '../components/Button';
 
 const Header = () => {
   return (
@@ -16,6 +17,11 @@ const Header = () => {
         Clipboard allows you to track and organize everything you copy.
         Instantly access your clipboard on all your devices.
       </p>
+
+      <div className="flex flex-col gap-4">
+        <Button text="iOS" />
+        <Button text="Mac" />
+      </div>
     </header>
   );
 };
