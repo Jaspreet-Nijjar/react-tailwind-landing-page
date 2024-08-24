@@ -23,6 +23,19 @@ const Hero = () => {
             width={300}
             className="mx-auto lg:w-1/2"
           />
+
+          <div>
+            {hero.map((hero) => (
+              <div className="mt-12">
+                <h2 className="text-darkGrayBlue font-semibold text-2xl lg:text-left">
+                  {hero.heading}
+                </h2>
+                <p className="text-grayBlue lg:text-left lg:max-w-96">
+                  {hero.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <h1 className="text-2xl font-bold text-darkGrayBlue">
